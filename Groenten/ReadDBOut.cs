@@ -11,5 +11,6 @@ namespace Groenten
         public string Product {  get; set; }
         public string Plaatje {  get; set; }
         public decimal Prijs { get; set; }
+        public int Aantal {  get; set; }
     }
 }

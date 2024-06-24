@@ -5,18 +5,21 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Mysqlx.Resultset;
+using System.Drawing;
 
 
 namespace Groenten
 {
     public partial class Form1 : Form
     {
+        string plaatje123 = "C:\\Users\\Gewoo\\Documents\\dumps";
         private decimal totaal;
         string ConnectionString = "Server=localhost;Database=csv_db 9;user=root;";
         List<ReadDBOut> Producten = new List<ReadDBOut>();
@@ -50,6 +53,7 @@ namespace Groenten
 
                         // Lijst updaten met de meegegeven producten
                         Producten.Add(readDBOut);
+                        createButtons();
                     }
                     reader.Close();
                     // Functie 
@@ -62,67 +66,37 @@ namespace Groenten
             }
         }
 
+        private void plaatjeProduct()
+        {
+
+        }
+
+        private void createButtons()
+        {
+            flowLayoutPanel3.Controls.Clear();
+
+            for (int i = 0; i < Producten.Count; i++)
+            {
+                ReadDBOut product = Producten[i];
+                Button button = new Button();
+                button.Text = product.Product;
+                button.Tag = i;
+                //Image image = Image.FromFile(product.Plaatje);
+                //button.Image = image;
+                //Image image = Image.FromFile(plaatje);
+                //button.Image = new Bitmap(image, new Size(200, 200));
+                button.Size = new System.Drawing.Size(163, 157);
+                button.Click += new EventHandler(button1_Click);
+                flowLayoutPanel3.Controls.Add(button);
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            int productIndex = -1;
+            int productIndex = (int)btn.Tag;
 
-            switch (btn.Name)
-            {
-                case "button1":
-                    productIndex = 0;
-                    break;
-                case "button2":
-                    productIndex = 1;
-                    break;
-                case "button3":
-                    productIndex = 2;
-                    break;
-                case "button4":
-                    productIndex = 3;
-                    break;
-                case "button5":
-                    productIndex = 7;
-                    break;
-                case "button6":
-                    productIndex = 6;
-                    break;
-                case "button7":
-                    productIndex = 5;
-                    break;
-                case "button8":
-                    productIndex = 4;
-                    break;
-                case "button9":
-                    productIndex = 8;
-                    break;
-                case "button10":
-                    productIndex = 9;
-                    break;
-                case "button11":
-                    productIndex = 10;
-                    break;
-                case "button12":
-                    productIndex = 11;
-                    break;
-                case "button13":
-                    productIndex = 15;
-                    break;
-                case "button14":
-                    productIndex = 14;
-                    break;
-                case "button15":
-                    productIndex = 13;
-                    break;
-                case "button16":
-                    productIndex = 12;
-                    break;
-                default:
-                    MessageBox.Show("Fruit bestaat niet");
-                    return;
-            }
-
-            if (Producten.Count > productIndex)
+            if (productIndex >= 0 && productIndex < Producten.Count)
             {
                 ReadDBOut product = Producten[productIndex];
                 bool productExists = false;
@@ -146,20 +120,21 @@ namespace Groenten
                 totaal += product.Prijs;
                 label2.Text = totaal.ToString("C");
             }
-
             else
             {
                 MessageBox.Show("Product index out of range.");
             }
         }
-
-
-
         private void button2_Click(object sender, EventArgs e)
         {
 
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

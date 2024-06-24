@@ -52,6 +52,8 @@
             this.Prijs = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Aantal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,7 +71,7 @@
             // button2
             // 
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(172, 3);
+            this.button2.Location = new System.Drawing.Point(3, 166);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(163, 157);
             this.button2.TabIndex = 18;
@@ -79,7 +81,7 @@
             // button3
             // 
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(341, 3);
+            this.button3.Location = new System.Drawing.Point(3, 329);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(163, 157);
             this.button3.TabIndex = 19;
@@ -89,7 +91,7 @@
             // button4
             // 
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(510, 3);
+            this.button4.Location = new System.Drawing.Point(3, 492);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(163, 157);
             this.button4.TabIndex = 20;
@@ -99,7 +101,7 @@
             // button5
             // 
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(3, 166);
+            this.button5.Location = new System.Drawing.Point(3, 655);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(163, 157);
             this.button5.TabIndex = 21;
@@ -109,7 +111,7 @@
             // button6
             // 
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(172, 166);
+            this.button6.Location = new System.Drawing.Point(3, 818);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(163, 157);
             this.button6.TabIndex = 22;
@@ -119,7 +121,7 @@
             // button7
             // 
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(341, 166);
+            this.button7.Location = new System.Drawing.Point(3, 981);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(163, 157);
             this.button7.TabIndex = 23;
@@ -129,7 +131,7 @@
             // button8
             // 
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(510, 166);
+            this.button8.Location = new System.Drawing.Point(3, 1144);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(163, 157);
             this.button8.TabIndex = 24;
@@ -139,7 +141,7 @@
             // button9
             // 
             this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(3, 329);
+            this.button9.Location = new System.Drawing.Point(3, 1307);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(163, 157);
             this.button9.TabIndex = 25;
@@ -149,7 +151,7 @@
             // button10
             // 
             this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(172, 329);
+            this.button10.Location = new System.Drawing.Point(3, 1470);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(163, 157);
             this.button10.TabIndex = 26;
@@ -159,7 +161,7 @@
             // button11
             // 
             this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(341, 329);
+            this.button11.Location = new System.Drawing.Point(3, 1633);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(163, 157);
             this.button11.TabIndex = 27;
@@ -169,7 +171,7 @@
             // button12
             // 
             this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.Location = new System.Drawing.Point(510, 329);
+            this.button12.Location = new System.Drawing.Point(3, 1796);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(163, 157);
             this.button12.TabIndex = 28;
@@ -179,7 +181,7 @@
             // button13
             // 
             this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.Location = new System.Drawing.Point(3, 492);
+            this.button13.Location = new System.Drawing.Point(3, 1959);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(163, 157);
             this.button13.TabIndex = 29;
@@ -189,7 +191,7 @@
             // button14
             // 
             this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.Location = new System.Drawing.Point(172, 492);
+            this.button14.Location = new System.Drawing.Point(3, 2122);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(163, 157);
             this.button14.TabIndex = 30;
@@ -199,7 +201,7 @@
             // button15
             // 
             this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(341, 492);
+            this.button15.Location = new System.Drawing.Point(3, 2285);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(163, 157);
             this.button15.TabIndex = 31;
@@ -209,7 +211,7 @@
             // button16
             // 
             this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.Location = new System.Drawing.Point(510, 492);
+            this.button16.Location = new System.Drawing.Point(3, 2448);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(163, 157);
             this.button16.TabIndex = 32;
@@ -289,16 +291,32 @@
             this.flowLayoutPanel1.Controls.Add(this.button14);
             this.flowLayoutPanel1.Controls.Add(this.button15);
             this.flowLayoutPanel1.Controls.Add(this.button16);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 4);
+            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(960, 587);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(682, 656);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(67, 71);
             this.flowLayoutPanel1.TabIndex = 38;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 2611);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel2.TabIndex = 33;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 4);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(678, 644);
+            this.flowLayoutPanel3.TabIndex = 39;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1039, 670);
+            this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
@@ -337,6 +355,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Prijs;
         private System.Windows.Forms.DataGridViewTextBoxColumn Aantal;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
     }
 }
 
